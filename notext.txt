@@ -1,9 +1,17 @@
+Git Repo:
+--------------
 https://github.com/taylonr/intro-to-protractor
 
 Installation:
 ----------------------
 npm install -g protractor
 webdriver-manager update
+
+Install node
+---------------------------
+https://www.youtube.com/watch?v=1uFY60CESlM
+create c:/data/db
+start mongod: C:\Program Files\MongoDB\Server\3.2\bin
 
 
 webdriver-manager start
@@ -15,3 +23,8 @@ run grunt to lanch server
 Add new Events:
 ---------------
 http://localhost:3000/#!/EventRatings/new
+
+
+Autocompletion:
+---------------------
+angular-protractor -> library

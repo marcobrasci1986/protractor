@@ -28,3 +28,34 @@ http://localhost:3000/#!/EventRatings/new
 Autocompletion:
 ---------------------
 angular-protractor -> library
+
+
+
+Locators:
+-----------
+<div> {{ name }}</div>
+by.binding('name');
+
+<input ng-model='name' />
+by.binding('name');
+
+<div class='primary header'>Caption 1</div>
+by.css('.primary.header');
+
+<button>Save</button>
+by.buttonText('Save');
+
+<ul>
+    <li ng-repeat='u in users'> {{ u.name }}</li>
+</ul>
+br.repeater('u in users');
+
+<select ng-options='r for r in roles'></select>
+by.options('r for r in roles');
+
+by.id
+by.linkText (a href)
+by.name
+by.tagName (all divs, all p's, ..)
+by.xpath();
+by.addLocator -> custom locator

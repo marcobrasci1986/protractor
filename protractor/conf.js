@@ -1,8 +1,17 @@
 /**
- * Specify the addres of webdriver and location of tests
- * @type {{seleniumAddress: string, specs: string[]}}
+ * Specify the address of webdriver and location of tests
+ *
+ * Specify suite(s) -> runs in order (remove data, create data, verify data)
+ * protractor conf.js --suite=smoke
+ * protractor conf.js --suite=smoke,longRunning
  */
 exports.config = {
     seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
-    specs: ['./ratings/event.list.item.spec.js']
+    specs: ['./**/*.spec.js'],
+
+    suites: {
+        smoke : './smoke/*.spec.js',
+        longRunning : './ratings/*.spec.js',
+        full: './**/*.spec.js'
+    }
 };

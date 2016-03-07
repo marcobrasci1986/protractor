@@ -1,0 +1,1 @@
+Smoke tests: run quickly and hit the app at a high level. Sanity check

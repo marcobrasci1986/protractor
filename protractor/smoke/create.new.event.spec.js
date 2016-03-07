@@ -1,6 +1,9 @@
+var CreatePage = require('./pages/create.event.page.js');
+
 describe('Adding a new Event', function () {
     describe('When the form is empty', function () {
         var createButton;
+        var createPage = new CreatePage();
         beforeEach(function () {
             browser.get('http://localhost:3000/#!/EventRatings/new');
             createButton = element(by.buttonText('Create'));
@@ -13,7 +16,7 @@ describe('Adding a new Event', function () {
 
         it('should enable btn Create when form is valid', function () {
             // enter text in input field
-            element(by.model('event.name')).sendKeys('A Sample Event');
+            createPage.name.sendKeys('A Sample Event');
             var css = createButton.getAttribute('class');
 
             expect(css).not.toMatch('disabled');
@@ -22,7 +25,8 @@ describe('Adding a new Event', function () {
         it('should add event when saving the form', function () {
             var eventTitle = 'Event Name';
 
-            element(by.model('event.name')).sendKeys(eventTitle);
+            //element(by.model('event.name')).sendKeys(eventTitle);
+            createPage.name.sendKeys(eventTitle);
             createButton.click();
 
             // wait for angular to redirect after an event is created

@@ -1,3 +1,5 @@
+DEbugging protractor: https://github.com/angular/protractor/blob/master/docs/debugging.md
+
 Elementor: https://www.youtube.com/watch?v=kC0JYp79tdo
 Ddescriber: https://www.youtube.com/watch?v=xdSofu-lEMA
 

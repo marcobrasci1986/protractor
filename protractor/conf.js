@@ -12,6 +12,7 @@ exports.config = {
     suites: {
         smoke : './smoke/*.spec.js',
         longRunning : './ratings/*.spec.js',
+        create : './smoke/create.new.event.spec.js',
         full: './**/*.spec.js'
     }
 };

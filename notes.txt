@@ -1,3 +1,7 @@
+Elementor: https://www.youtube.com/watch?v=kC0JYp79tdo
+Ddescriber: https://www.youtube.com/watch?v=xdSofu-lEMA
+
+
 Git Repo:
 --------------
 https://github.com/taylonr/intro-to-protractor
